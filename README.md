@@ -25,10 +25,10 @@
 ## Build
 Requirements: Ubuntu 22.04
 ```shell
-sudo apt install -y git llvm cmake
+sudo apt install -y git llvm cmake g++ libc++-dev
 git clone https://github.com/seclab-ucr/SyzDescribe.git
 cd SyzDescribe
-bash ./script/build.bash
+CXX=clang++ bash ./script/build.bash
 ```
 
 ## Run

@@ -28,7 +28,7 @@ endfunction()
 _run_llvm_config(_llvm_cxx_flags "--cxxflags")
 _run_llvm_config(_llvm_ld_flags "--ldflags")
 _run_llvm_config(_llvm_libs "--libs")
-_run_llvm_config(_llvm_system_libs "--system-libs")
+set(_llvm_system_libs "-lrt -ldl -lpthread -lm -lz -lzstd")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${_llvm_cxx_flags} ${_llvm_ld_flags} ${_llvm_libs} ${_llvm_system_libs}")
 
 message(STATUS "_llvm_cxx_flags: ${_llvm_cxx_flags}")

@@ -1,6 +1,7 @@
 #include <llvm/IR/InlineAsm.h>
 #include <llvm/IR/InstIterator.h>
 #include <fstream>
+#include <sstream>
 #include <regex>
 #include <llvm/IR/Instructions.h>
 #include "Common.hh"

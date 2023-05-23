@@ -8,4 +8,4 @@ cd $PATH_cmake || exit
 echo "[*] Trying to cmake"
 cmake -G "Unix Makefiles" ..
 echo "[*] Trying to make"
-make -j16
+make -j$(nproc)
